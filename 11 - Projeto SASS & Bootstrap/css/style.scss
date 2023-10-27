@@ -1,0 +1,32 @@
+@import "_buttons.scss";
+
+header {
+    position: sticky;
+    top:0;
+    z-index: 99999;
+    nav {
+        .button {
+            @include button();
+        }
+    }
+}
+
+.nav {
+    .nav-item {
+        .nav-link {
+            color: gray;
+        }
+    }
+}
+
+main{
+    .container-fluid{
+        background-color: lightgray;
+        .button {
+            @include button();
+        }
+        img{
+            height: 500px;
+        }
+    }
+}

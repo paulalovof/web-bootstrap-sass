@@ -1,0 +1,10 @@
+@mixin button(){
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    &:hover{
+        background-color: black;
+    }
+}

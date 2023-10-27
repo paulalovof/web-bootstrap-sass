@@ -1,0 +1,36 @@
+@import "_variables.scss";
+@import "_buttons.scss";
+
+header{
+    background-color: $cor-primaira;
+    display: flex;
+    justify-content: space-around;
+    
+    .menu{
+        nav{
+            ul{
+                list-style:none;
+                display: flex;
+                gap: 5px;
+                li{
+                    a{
+                        color: $cor-fonte;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+    .button{
+       @include button(orange, yellow);
+    }
+
+    .button-grey{
+        @include button(rgb(56, 56, 56), gray);
+    }
+}
+
+
+@import "_footer.scss";
